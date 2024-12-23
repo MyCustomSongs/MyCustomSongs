@@ -24,7 +24,7 @@ function App() {
   });
 
   ////////// songs list
-  const fileName = "/MyCustomSongs/linksData/AudioSongsList.xlsx"; // for gh pages path
+  const fileName = "/MyCustomSongs/linksData/AudioSongsList.xlsx"; // for gh pages path, same for below iamge for local without reponame
  // const fileName = "/linksData/AudioSongsList.xlsx"; // for local use path path
    
     useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
           //  if(x[3] == 'audio/mpeg'){
             return {
               name: x[0],
-              cover:"/images/SongCoverPic.jpg",
+              cover:"/MyCustomSongs/images/SongCoverPic.jpg",
               artist: x[4],
               audio: `https://drive.google.com/file/d/${x[2]}/preview`,
               color: ["#205950", "#2ab3bf"],
