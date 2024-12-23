@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MyCustomSongs/static/css/main.1393ef74.css",
+    "main.js": "/MyCustomSongs/static/js/main.8278e73d.js",
+    "static/js/488.d047e05f.chunk.js": "/MyCustomSongs/static/js/488.d047e05f.chunk.js",
+    "index.html": "/MyCustomSongs/index.html",
+    "main.1393ef74.css.map": "/MyCustomSongs/static/css/main.1393ef74.css.map",
+    "main.8278e73d.js.map": "/MyCustomSongs/static/js/main.8278e73d.js.map",
+    "488.d047e05f.chunk.js.map": "/MyCustomSongs/static/js/488.d047e05f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1393ef74.css",
+    "static/js/main.8278e73d.js"
+  ]
+}
