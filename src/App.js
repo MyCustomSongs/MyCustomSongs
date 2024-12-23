@@ -36,7 +36,7 @@ function App() {
           const ws = wb.Sheets[wsname];
           const excelData = XLSX.utils.sheet_to_json(ws, { header: 1 });
           
-          let songsList = excelData?.filter(d => d[3] == 'audio/mpeg')?.map((x) => {
+          let songsList = excelData?.filter(d => d[3] === 'audio/mpeg')?.map((x) => {
           //  if(x[3] == 'audio/mpeg'){
             return {
               name: x[0],
@@ -105,8 +105,8 @@ function App() {
         songs={songs}
         setCurrentSong={setCurrentSong}
       />
-      <div id="iframes_div">
         <iframe
+        title="iframe_song"
         frameborder="0"
         width="420"
         height="220"
@@ -115,9 +115,7 @@ function App() {
         ref={audioRef}
         onEnded={songEndHandler}
         src={currentSong.audio}>
-        //src="https://drive.google.com/file/d/1ZbLecgkt1sc93yH5DKovlFNvTrDEXqj_/preview">
       </iframe> 
-      </div>
       {<audio
         onLoadedMetadata={timeUpdateHandler}
         onTimeUpdate={timeUpdateHandler}
